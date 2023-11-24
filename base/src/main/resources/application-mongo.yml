@@ -1,0 +1,8 @@
+spring:
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+  config.activate.on-profile: mongo
+  data.mongodb:
+    uri: mongodb://root:example@localhost:27017
+    database: data
+
+app.repository: mongo
